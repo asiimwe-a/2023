@@ -19,3 +19,36 @@ body {
     margin: 100px auto;
     background-color: ;
 }
+
+.accordion-header {
+    background-color: #eee;
+    color: #333;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+  }
+
+  .accordion-header.active,
+  .accordion-header:hover {
+    background-color: #ccc;
+  }
+
+  .accordion-content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+  .accordion-content p {
+    margin: 0;
+  }
+
+  .accordion-content.active {
+    display: block;
+  }
